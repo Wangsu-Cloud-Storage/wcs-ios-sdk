@@ -42,10 +42,9 @@ demo 例子
 2)将WCSiOS.framework添加到工程环境下，并确认WCSiOS.framework已经被添加到工程所使用的Target下的 Build Phases -> Link Binary With Libraries下 
 3)SDK依赖的系统库如下，请确保将以下系统库添加到Link Binary With Libraries下
 
-```
+```objective-c
 MobileCoreServices.framework
 libz.dylib(libz.tbd for Xcode7+)
-
 ```
 
 4)工程编译环境 
@@ -66,14 +65,13 @@ SDK的framework包含Category，所以需要添加-ObjC选项，否则在使用�
 
 在获取到AK和SK等信息之后，您可以按照如下方式进行密钥初始化：
 
-```
+```objective-c
 import com.chinanetcenter.api.util.Config;
 //1.初始化信息
 String ak = "your access key";
 String sk = "your secrete key";
 String PUT_URL = "your uploadDomain";
 Config.init(ak,sk,PUT_URL,"");
-
 ```
 
 #### 文件上传
@@ -87,7 +85,7 @@ Config.init(ak,sk,PUT_URL,"");
 
 **范例：**
 
-```
+```objective-c
 - (void)normalUpload {
   WCSUploadObjectRequest *request = [[WCSUploadObjectRequest alloc] init];
   request.token = @"上传的token，由服务端提供";
@@ -109,13 +107,12 @@ Config.init(ak,sk,PUT_URL,"");
     return nil;
   }];
 }
-
 ```
 
 2.取消正在上传的请求 
 **范例：**
 
-```
+```objective-c
 - (void)normalUploadCancelled {
   WCSUploadObjectRequest *request = [[WCSUploadObjectRequest alloc] init];
   request.token = @"上传的token，由服务端提供";
@@ -144,14 +141,13 @@ return nil;
     [uploadRequest cancel];
   });
 }
-
 ```
 
 3.自定义变量上传(POST方式)
 
 **范例：**
 
-```
+```objective-c
 - (void)normalUpload {
   WCSUploadObjectRequest *request = [[WCSUploadObjectRequest alloc] init];
   request.token = @"上传的token，由服务端提供";
@@ -177,7 +173,6 @@ return nil;
     return nil;
   }];
 }
-
 ```
 
 4.分片上传（POST方式） 
@@ -187,7 +182,7 @@ return nil;
 
 **范例**
 
-```
+```objective-c
 - (void)chunkedUpload {
   WCSBlockUploadRequest *blockRequest = [[WCSBlockUploadRequest alloc] init];
   blockRequest.fileKey = @"上传到云端的文件名，不填则以原文件名命名";
@@ -207,7 +202,6 @@ return nil;
     }
     return nil;
   }];
-
 ```
 
 #### 常见问题
