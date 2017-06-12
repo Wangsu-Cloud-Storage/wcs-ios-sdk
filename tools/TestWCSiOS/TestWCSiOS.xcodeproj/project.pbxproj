@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18FD2DD1CB18BFF297F90956 /* libPods-TestWCSiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5EBCDD09434FB9928E7B44 /* libPods-TestWCSiOS.a */; };
+		471D7FE21CDC77130084D341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 471D7FE11CDC77130084D341 /* main.m */; };
+		471D7FE51CDC77130084D341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 471D7FE41CDC77130084D341 /* AppDelegate.m */; };
+		471D7FE81CDC77130084D341 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471D7FE71CDC77130084D341 /* ViewController.m */; };
+		471D7FEB1CDC77130084D341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471D7FE91CDC77130084D341 /* Main.storyboard */; };
+		471D7FED1CDC77130084D341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471D7FEC1CDC77130084D341 /* Assets.xcassets */; };
+		471D7FF01CDC77130084D341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471D7FEE1CDC77130084D341 /* LaunchScreen.storyboard */; };
+		471D7FFA1CDC7E330084D341 /* exif.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 471D7FF91CDC7E330084D341 /* exif.jpg */; };
+		473FA40B1D12A9920088BCD5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 473FA4091D12A63F0088BCD5 /* libz.tbd */; };
+		E14403E91EC2A5EE00013BE9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14403E81EC2A5EE00013BE9 /* MobileCoreServices.framework */; };
+		E16D9A3B1ECEDB5B00A3C2B0 /* WCSiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E46C5B1EC20121001513FA /* WCSiOS.framework */; };
+		E1EEF7DB1EC401E3007DEE23 /* WCSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EEF7D91EC401E3007DEE23 /* WCSTestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E14403E61EC2A5B500013BE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E46C551EC20121001513FA /* WCSiOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4794BD331E6D531000B04571;
+			remoteInfo = WCSiOS;
+		};
+		E1E46C5A1EC20121001513FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E46C551EC20121001513FA /* WCSiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4794BD341E6D531000B04571;
+			remoteInfo = WCSiOS;
+		};
+		E1E46C5C1EC20121001513FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E46C551EC20121001513FA /* WCSiOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4716EC6A1EB863C00052CE75;
+			remoteInfo = WCSiOSTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00CFE15A5F7F3C364C614F10 /* Pods-TestWCSiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWCSiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestWCSiOS/Pods-TestWCSiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		471D7FDD1CDC77130084D341 /* TestWCSiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestWCSiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		471D7FE11CDC77130084D341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		471D7FE31CDC77130084D341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		471D7FE41CDC77130084D341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		471D7FE61CDC77130084D341 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		471D7FE71CDC77130084D341 /* ViewController.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; tabWidth = 4; };
+		471D7FEA1CDC77130084D341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		471D7FEC1CDC77130084D341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		471D7FEF1CDC77130084D341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		471D7FF11CDC77130084D341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471D7FF91CDC7E330084D341 /* exif.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = exif.jpg; sourceTree = "<group>"; };
+		473FA4091D12A63F0088BCD5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B1551ADC4CA898011AC4A07B /* Pods-TestWCSiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestWCSiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestWCSiOS/Pods-TestWCSiOS.release.xcconfig"; sourceTree = "<group>"; };
+		E14403E81EC2A5EE00013BE9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E1E46C551EC20121001513FA /* WCSiOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WCSiOS.xcodeproj; path = ../../../trunk/WCSiOS.xcodeproj; sourceTree = "<group>"; };
+		E1EEF7D81EC401E3007DEE23 /* WCSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCSTestViewController.h; sourceTree = "<group>"; };
+		E1EEF7D91EC401E3007DEE23 /* WCSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCSTestViewController.m; sourceTree = "<group>"; };
+		EB5EBCDD09434FB9928E7B44 /* libPods-TestWCSiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestWCSiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		471D7FDA1CDC77130084D341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16D9A3B1ECEDB5B00A3C2B0 /* WCSiOS.framework in Frameworks */,
+				E14403E91EC2A5EE00013BE9 /* MobileCoreServices.framework in Frameworks */,
+				473FA40B1D12A9920088BCD5 /* libz.tbd in Frameworks */,
+				18FD2DD1CB18BFF297F90956 /* libPods-TestWCSiOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2367E1389B9EC174FFAB69AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E14403E81EC2A5EE00013BE9 /* MobileCoreServices.framework */,
+				EB5EBCDD09434FB9928E7B44 /* libPods-TestWCSiOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		471D7FD41CDC77130084D341 = {
+			isa = PBXGroup;
+			children = (
+				473FA4091D12A63F0088BCD5 /* libz.tbd */,
+				471D7FDF1CDC77130084D341 /* TestWCSiOS */,
+				471D7FDE1CDC77130084D341 /* Products */,
+				4F7DF45DE061CB3680BFB290 /* Pods */,
+				2367E1389B9EC174FFAB69AC /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		471D7FDE1CDC77130084D341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				471D7FDD1CDC77130084D341 /* TestWCSiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		471D7FDF1CDC77130084D341 /* TestWCSiOS */ = {
+			isa = PBXGroup;
+			children = (
+				E1E46C551EC20121001513FA /* WCSiOS.xcodeproj */,
+				471D7FE31CDC77130084D341 /* AppDelegate.h */,
+				471D7FE41CDC77130084D341 /* AppDelegate.m */,
+				471D7FE61CDC77130084D341 /* ViewController.h */,
+				471D7FE71CDC77130084D341 /* ViewController.m */,
+				E1EEF7D81EC401E3007DEE23 /* WCSTestViewController.h */,
+				E1EEF7D91EC401E3007DEE23 /* WCSTestViewController.m */,
+				471D7FE91CDC77130084D341 /* Main.storyboard */,
+				471D7FEC1CDC77130084D341 /* Assets.xcassets */,
+				471D7FEE1CDC77130084D341 /* LaunchScreen.storyboard */,
+				471D7FF11CDC77130084D341 /* Info.plist */,
+				471D7FE01CDC77130084D341 /* Supporting Files */,
+			);
+			path = TestWCSiOS;
+			sourceTree = "<group>";
+		};
+		471D7FE01CDC77130084D341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				471D7FF91CDC7E330084D341 /* exif.jpg */,
+				471D7FE11CDC77130084D341 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F7DF45DE061CB3680BFB290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00CFE15A5F7F3C364C614F10 /* Pods-TestWCSiOS.debug.xcconfig */,
+				B1551ADC4CA898011AC4A07B /* Pods-TestWCSiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1E46C561EC20121001513FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E46C5B1EC20121001513FA /* WCSiOS.framework */,
+				E1E46C5D1EC20121001513FA /* WCSiOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		471D7FDC1CDC77130084D341 /* TestWCSiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471D7FF41CDC77130084D341 /* Build configuration list for PBXNativeTarget "TestWCSiOS" */;
+			buildPhases = (
+				1D578CA71F1F12F1EEEBBCCA /* [CP] Check Pods Manifest.lock */,
+				471D7FD91CDC77130084D341 /* Sources */,
+				471D7FDA1CDC77130084D341 /* Frameworks */,
+				471D7FDB1CDC77130084D341 /* Resources */,
+				2FBAF701A8624306D4611367 /* [CP] Embed Pods Frameworks */,
+				78B2F5B0A0FAECC4B62C12F0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14403E71EC2A5B500013BE9 /* PBXTargetDependency */,
+			);
+			name = TestWCSiOS;
+			productName = TestWCSiOS;
+			productReference = 471D7FDD1CDC77130084D341 /* TestWCSiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		471D7FD51CDC77130084D341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = CNC;
+				TargetAttributes = {
+					471D7FDC1CDC77130084D341 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = S6NQ524Y5V;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 471D7FD81CDC77130084D341 /* Build configuration list for PBXProject "TestWCSiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 471D7FD41CDC77130084D341;
+			productRefGroup = 471D7FDE1CDC77130084D341 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E1E46C561EC20121001513FA /* Products */;
+					ProjectRef = E1E46C551EC20121001513FA /* WCSiOS.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				471D7FDC1CDC77130084D341 /* TestWCSiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E1E46C5B1EC20121001513FA /* WCSiOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WCSiOS.framework;
+			remoteRef = E1E46C5A1EC20121001513FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1E46C5D1EC20121001513FA /* WCSiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WCSiOSTests.xctest;
+			remoteRef = E1E46C5C1EC20121001513FA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		471D7FDB1CDC77130084D341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471D7FF01CDC77130084D341 /* LaunchScreen.storyboard in Resources */,
+				471D7FED1CDC77130084D341 /* Assets.xcassets in Resources */,
+				471D7FEB1CDC77130084D341 /* Main.storyboard in Resources */,
+				471D7FFA1CDC7E330084D341 /* exif.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D578CA71F1F12F1EEEBBCCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2FBAF701A8624306D4611367 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestWCSiOS/Pods-TestWCSiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B2F5B0A0FAECC4B62C12F0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestWCSiOS/Pods-TestWCSiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471D7FD91CDC77130084D341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471D7FE81CDC77130084D341 /* ViewController.m in Sources */,
+				471D7FE51CDC77130084D341 /* AppDelegate.m in Sources */,
+				E1EEF7DB1EC401E3007DEE23 /* WCSTestViewController.m in Sources */,
+				471D7FE21CDC77130084D341 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E14403E71EC2A5B500013BE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WCSiOS;
+			targetProxy = E14403E61EC2A5B500013BE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		471D7FE91CDC77130084D341 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471D7FEA1CDC77130084D341 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		471D7FEE1CDC77130084D341 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471D7FEF1CDC77130084D341 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		471D7FF21CDC77130084D341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		471D7FF31CDC77130084D341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		471D7FF51CDC77130084D341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CFE15A5F7F3C364C614F10 /* Pods-TestWCSiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shuyou Yang (S4NKQU2CB7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S6NQ524Y5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TestWCSiOS",
+				);
+				INFOPLIST_FILE = TestWCSiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinanetcenter.TestWCSPersonal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1ced01a9-8f33-4bfb-9310-9d3256ad07e3";
+				PROVISIONING_PROFILE_SPECIFIER = maatest;
+			};
+			name = Debug;
+		};
+		471D7FF61CDC77130084D341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1551ADC4CA898011AC4A07B /* Pods-TestWCSiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shuyou Yang (S4NKQU2CB7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S6NQ524Y5V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TestWCSiOS",
+				);
+				INFOPLIST_FILE = TestWCSiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinanetcenter.TestWCSPersonal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1ced01a9-8f33-4bfb-9310-9d3256ad07e3";
+				PROVISIONING_PROFILE_SPECIFIER = maatest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		471D7FD81CDC77130084D341 /* Build configuration list for PBXProject "TestWCSiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471D7FF21CDC77130084D341 /* Debug */,
+				471D7FF31CDC77130084D341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471D7FF41CDC77130084D341 /* Build configuration list for PBXNativeTarget "TestWCSiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471D7FF51CDC77130084D341 /* Debug */,
+				471D7FF61CDC77130084D341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 471D7FD51CDC77130084D341 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module WCSiOS {
+  umbrella header "WCSiOS.h"
+
+  export *
+  module * { export * }
+}
