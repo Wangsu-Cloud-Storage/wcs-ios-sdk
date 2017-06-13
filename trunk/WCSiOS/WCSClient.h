@@ -26,14 +26,14 @@ FOUNDATION_EXPORT NSString * _Nonnull const WCSiOSSDKVersion;
 /**
  创建一个用于发起请求的Client
 
- @param baseURL 当前所使用的域名，默认使用http://up.wcsapi.biz.matocloud.com:8090
+ @param baseURL 当前所使用的域名(必填)
  */
 - (instancetype _Nonnull)initWithBaseURL:(NSURL * _Nullable)baseURL;
 
 /**
  创建一个用于发起请求的Client
  
- @param baseURL 当前所使用的域名，默认使用http://up.wcsapi.biz.matocloud.com:8090
+ @param baseURL 当前所使用的域名(必填)
  @param timeout 超时时间
  */
 - (instancetype _Nonnull)initWithBaseURL:(NSURL * _Nullable )baseURL andTimeout:(NSTimeInterval)timeout;
@@ -41,7 +41,7 @@ FOUNDATION_EXPORT NSString * _Nonnull const WCSiOSSDKVersion;
 /**
  创建一个用于发起请求的Client
  
- @param baseURL 当前所使用的域名，默认使用http://up.wcsapi.biz.matocloud.com:8090
+ @param baseURL 当前所使用的域名(必填)
  @param timeout 超时时间
  @param concurrentCount 分片上传的并发数，范围为5~10。
  */
@@ -52,7 +52,7 @@ FOUNDATION_EXPORT NSString * _Nonnull const WCSiOSSDKVersion;
 /**
  创建一个用于发起请求的Client
  
- @param baseURL 当前所使用的域名，默认使用http://up.wcsapi.biz.matocloud.com:8090
+ @param baseURL 当前所使用的域名(必填)
  @param timeout 超时时间
  @param concurrentCount 分片上传的并发数，范围为5~10。
  @param retryTimes 重试次数
@@ -65,7 +65,7 @@ FOUNDATION_EXPORT NSString * _Nonnull const WCSiOSSDKVersion;
 /**
  创建一个用于发起请求的Client
  
- @param baseURL 当前所使用的域名，默认使用http://up.wcsapi.biz.matocloud.com:8090
+ @param baseURL 当前所使用的域名(必填)
  @param timeout 超时时间
  @param proxyDictionary 设置代理字典。
  */

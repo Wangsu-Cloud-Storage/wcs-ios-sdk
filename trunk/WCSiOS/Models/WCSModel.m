@@ -25,7 +25,7 @@ NSString * const WCSPathForPut = @"/file/upload";
 NSString * const WCSPathForMultipartUpload = @"/multifile/upload";
 
 NSString * const WCSGetURLString = @"http://w.wcsapi.biz.matocloud.com";
-NSString * const WCSBaseUploadString = @"http://up.wcsapi.biz.matocloud.com:8090";
+NSString * const WCSBaseUploadString = @"your upload domain";
 NSString * const WCSManagerURLString = @"http://mgr.wcsapi.biz.matocloud.com";
 //NSString * const WCSBaseUploadString = @"https://apitestuser.up0.v1.wcsapi.com";
 //NSString * const WCSManagerURLString = @"https://apitestuser.mgr0.v1.wcsapi.com";

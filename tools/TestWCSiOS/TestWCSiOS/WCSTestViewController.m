@@ -58,9 +58,7 @@ static NSString * const kNokeyToken = @"db17ab5d18c137f786b67c490187317a0738f94a
   _pickerData = @[@"file100k",@"file200k",@"file500k",@"file1m",@"file4m",@"file10m",@"file50m",@"file100m",@"file500m",@"file1G"];
   _tokenTextField.text = kNokeyToken;
   self.fileSizeArray = @[@102400, @204800, @512000, @1048576, @4194304,@10485760, @52428800, @104857600 ,@524288000,@1073741824];
-//  _baseUrlTextField.text = @"http://10.8.198.22:98";//测试环境
-
-  self.client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
+  self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"https://apitestuser.up0.v1.wcsapi.com"] andTimeout:30];
   //  生成选择文件列表
   _picker.showsSelectionIndicator = YES;
   [_picker removeFromSuperview];

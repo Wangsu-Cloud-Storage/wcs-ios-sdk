@@ -251,7 +251,7 @@
                                     <outlet property="delegate" destination="epY-Dl-wgF" id="xKp-at-uQg"/>
                                 </connections>
                             </pickerView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="默认  http://up.wcsapi.biz.matocloud.com:8090" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6U-yv-0T6">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your upload domain" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6U-yv-0T6">
                                 <rect key="frame" x="0.0" y="50" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="DLC-yL-6KB"/>
