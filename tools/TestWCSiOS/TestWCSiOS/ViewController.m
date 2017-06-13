@@ -41,7 +41,7 @@ static NSString * const kCustomParamsToken = @"db17ab5d18c137f786b67c490187317a0
     [super viewDidLoad];
     self.fileNameArray = @[@"file100k", @"file1m", @"file10m", @"file50m", @"file100m", @"file500m"];
     self.fileSizeArray = @[@102400, @1024000, @10240000, @51200000, @102400000, @512000000];
-    self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"https://apitestuser.up0.v1.wcsapi.com"] andTimeout:30];
+    self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://apitestuser.up0.v1.wcsapi.com"] andTimeout:30];
     self.fileURL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@", [[NSBundle mainBundle] resourcePath], @"exif.jpg"]];
     self.sliceFileURL = [NSURL URLWithString:[[self getDocumentDirectory] stringByAppendingPathComponent:@"file10m"]];
     [WCSLogger defaultLogger].logLevel = WCSLogLevelVerbose;
