@@ -7,7 +7,7 @@
 //   代码调用范例
 
 #import "ViewController.h"
-#import <AFNetworking/AFNetworking.h>
+//#import <AFNetworking/AFNetworking.h>可有可无 可以不要
 #import <WCSiOS/WCSClient.h>
 #import <CoreImage/CoreImage.h>
 
