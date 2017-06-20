@@ -21,7 +21,7 @@
     NSError *jsonError;
     NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
     if (jsonError) {
-      *error = [NSError errorWithDomain:WCSClientErrorDomain code:WCSClientErrorIllegalData userInfo:@{WCSErrorKey : @"Decode response as JSON failed."}];
+      *error = [NSError errorWithDomain:WCSClientErrorDomain code:WCSClientErrorIllegalData userInfo:@{WCSErrorKey :[NSString stringWithFormat:@"Decode response as JSON failed.%@",response] }];
     } else {
       NSInteger statusCode = response.statusCode;
       if (statusCode >= 200 && statusCode < 300) {

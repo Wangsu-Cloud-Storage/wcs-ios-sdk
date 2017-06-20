@@ -18,7 +18,8 @@
       NSError *jsonError;
       NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
       if (jsonError) {
-        *error = [NSError errorWithDomain:WCSClientErrorDomain code:WCSClientErrorIllegalData userInfo:@{WCSErrorKey : @"Decode response as JSON failed."}];
+        *error = [NSError errorWithDomain:WCSClientErrorDomain code:WCSClientErrorIllegalData userInfo:@{WCSErrorKey :[NSString stringWithFormat:@"Decode response as JSON failed.%@",response] }];
+
       } else {
         WCSLogVerbose("batch upload response %@", responseDict);
         _successNum = [responseDict safeIntegerForKeyPath:@"brief.successNum"];
