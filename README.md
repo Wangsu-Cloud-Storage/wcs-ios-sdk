@@ -53,26 +53,7 @@ SDK的framework包含Category，所以需要添加-ObjC选项，否则在使用�
 ![添加-objc](https://wcs.chinanetcenter.com/indexNew/image/wcs/wcs-ios-sdk2.png)
 
 二、服务端开发环境准备 
-在工程中引入SDK的wcs-java-sdk-x.x.x.jar包，和wcs-java-sdk-x.x.x-dependencies.zip文件中解压出来的第三方jar包（以eclipse为例） 
-![服务端开发环境准备](https://wcs.chinanetcenter.com/indexNew/image/wcs/wcs-ios-sdk3.png)
-
-#### 配置信息
-
-用户接入网宿云存储时，需要使用一对有效的AK和SK进行签名认证，并填写“上传域名”进行文件上传。配置信息只需要在整个应用程序中初始化一次即可，具体操作如下：
-
-- 开通网宿云存储平台账户
-- 登录网宿云存储平台，在“安全管理”下的“密钥管理”查看AK和SKK，“域名查询”查看上传、管理域名。
-
-在获取到AK和SK等信息之后，您可以按照如下方式进行密钥初始化：
-
-```objective-c
-import com.chinanetcenter.api.util.Config;
-//1.初始化信息
-String ak = "your access key";
-String sk = "your secrete key";
-String PUT_URL = "your uploadDomain";
-Config.init(ak,sk,PUT_URL,"");
-```
+服务端开发环境请参考wcs-Java-SDK: https://github.com/Wangsu-Cloud-Storage/wcs-java-sdk
 
 #### 文件上传
 
