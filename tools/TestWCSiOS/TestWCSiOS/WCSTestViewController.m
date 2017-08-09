@@ -9,7 +9,7 @@
 #import "WCSTestViewController.h"
 #import "SVProgressHUD.h"
 #import <WCSiOS/WCSClient.h>
-static NSString * const kNokeyToken = @"db17ab5d18c137f786b67c490187317a0738f94a:NDEwYmQ3YzA4MjIwYTZhMGIwN2U2NGJjYjQ5NWIwZTdiMThhYzBhOQ==:eyJzY29wZSI6Indhbmd3YXlob21lIiwiZGVhZGxpbmUiOiI0MDcwODgwMDAwMDAwIiwicmV0dXJuQm9keSI6ImlwPSQoaXApIiwib3ZlcndyaXRlIjoxLCJmc2l6ZUxpbWl0IjowLCJpbnN0YW50IjowLCJzZXBhcmF0ZSI6MH0=";
+static NSString * const kNokeyToken = @"";
 
 @interface WCSTestViewController ()<UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate>
 @property (strong, nonatomic) WCSClient *client;
