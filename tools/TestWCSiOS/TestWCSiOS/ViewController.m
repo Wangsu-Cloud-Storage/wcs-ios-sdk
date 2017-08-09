@@ -11,13 +11,10 @@
 #import <WCSiOS/WCSClient.h>
 #import <CoreImage/CoreImage.h>
 
-static NSString * const kNormalTokan = @"db17ab5d18c137f786b67c490187317a0738f94a:NDEwYmQ3YzA4MjIwYTZhMGIwN2U2NGJjYjQ5NWIwZTdiMThhYzBhOQ==:eyJzY29wZSI6Indhbmd3YXlob21lIiwiZGVhZGxpbmUiOiI0MDcwODgwMDAwMDAwIiwicmV0dXJuQm9keSI6ImlwPSQoaXApIiwib3ZlcndyaXRlIjoxLCJmc2l6ZUxpbWl0IjowLCJpbnN0YW50IjowLCJzZXBhcmF0ZSI6MH0=";
+static NSString * const kNormalTokan = @"";
 
-//static NSString * const kNormalTokan = @"ff6cc66baf56235e2abfe6455159707f088a09f8:NmZmNTFmNDI3OTk5ZGNhOTM4MDFkYzMxMzdmMTg4MTU5Yzc4NDcxMQ==:eyJzY29wZSI6InIzMC13Y3NtOnlzeXRlc3RzbGljZSIsImRlYWRsaW5lIjoiNDA3MDg4MDAwMDAwMCIsIm92ZXJ3cml0ZSI6MSwiZnNpemVMaW1pdCI6MCwiaW5zdGFudCI6MCwic2VwYXJhdGUiOjB9";
 
-//static NSString * const kNormalTokan = @"db17ab5d18c137f786b67c490187317a0738f94a:ODdhOGZkMzJkY2FhZDMyYjI5ZjNhNWRiMzA3NDM1MTg1MTY0MzE4YQ==:eyJzY29wZSI6ImltYWdlczp5c3l0ZXN0a2V5IiwiZGVhZGxpbmUiOiI0MDcwODgwMDAwMDAwIiwib3ZlcndyaXRlIjoxLCJmc2l6ZUxpbWl0IjowLCJpbnN0YW50IjowLCJzZXBhcmF0ZSI6MH0=";
-
-static NSString * const kCustomParamsToken = @"db17ab5d18c137f786b67c490187317a0738f94a:ZmM2NmViMjhkM2Q4ZGMyZmYxNThiOWMxZDUyYWU1ZjY0NzIzYzM0NA==:eyJzY29wZSI6Indhbmd3YXlob21lIiwiZGVhZGxpbmUiOiI0MDcwODgwMDAwMDAwIiwicmV0dXJuQm9keSI6Ind3aFRlc3ROYW1lPSQoeDp0ZXN0KSZpcD0kKGlwKSIsIm92ZXJ3cml0ZSI6MSwiZnNpemVMaW1pdCI6MCwiaW5zdGFudCI6MCwic2VwYXJhdGUiOjB9";
+static NSString * const kCustomParamsToken = @"";
 
 @interface ViewController ()
 
