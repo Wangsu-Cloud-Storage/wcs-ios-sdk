@@ -196,3 +196,6 @@ return nil;
 
 3）链接_UTTypeCopyPreferredTagWithClass异常 
 请添加MobileCoreServices.framework到工程中
+
+4）nslog信息本地保存
+请参照demo的 AppDelegate.m 里面 [self redirectNSLogToDocumentFolder];
