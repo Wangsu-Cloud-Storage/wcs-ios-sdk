@@ -9,6 +9,6 @@
 #ifndef WCSDefines_h
 #define WCSDefines_h
 
-#define WCS_IOS_VERSION @"2.2.3"
+#define WCS_IOS_VERSION @"2.2.4"
 
 #endif /* WCSDefines_h */

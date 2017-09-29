@@ -19,7 +19,8 @@
 #import "WCSDefines.h"
 #import "WCSBolts.h"
 #import "WCSThreadSafeMutableDictionary.h"
-
+#import <UIKit/UIKit.h>
+#import "sys/utsname.h"
 #pragma mark - WCSURLSessionManagerDelegate
 
 static NSString* const WCSMobileURLSessionManagerCacheDomain = @"com.chinanetcenter.WCSURLSessionManager";
@@ -106,7 +107,10 @@ static NSString* const WCSMobileURLSessionManagerCacheDomain = @"com.chinanetcen
       sessionConfiguration.timeoutIntervalForRequest = configuration.timeoutIntervalForRequest;
     }
     sessionConfiguration.allowsCellularAccess = configuration.allowsCellularAccess;
-    NSString *userAgent = [NSString stringWithFormat:@"WCSiOS SDK/%@", WCS_IOS_VERSION];
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
+    NSString *userAgent = [NSString stringWithFormat:@"WCS-iOS-SDK-%@-%@-iOS%@(https://www.chinanetcenter.com)", WCS_IOS_VERSION,platform,[[UIDevice currentDevice] systemVersion]];
     sessionConfiguration.HTTPAdditionalHeaders = @{@"User-Agent": userAgent};
     _session = [NSURLSession sessionWithConfiguration:sessionConfiguration
                                              delegate:self
