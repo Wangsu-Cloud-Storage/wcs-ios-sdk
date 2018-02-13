@@ -2,10 +2,13 @@
 
 iOS SDK基于网宿云存储API规范构建，适用于IOS。使用此SDK构建您的移动APP，能让您非常便捷地将数据安全地存储到网宿云平台上。
 
-- [下载链接](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#下载链接)
-- [移动端场景演示](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#移动端场景演示)
-- [使用指南](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#使用指南) 
-  [准备开发环境](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#准备开发环境)[配置信息](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#配置信息)[文件上传](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#文件上传)[常见问题](https://wcs.chinanetcenter.com/document/SDK/wcs-ios-sdk#常见问题)
+- [下载链接](#downloadUrl)
+- [移动端场景演示](#移动端场景演示)
+- [使用指南](#使用指南) 
+- [准备开发环境](#准备开发环境)
+- [配置信息](#配置信息)
+- [文件上传](#文件上传)
+- [常见问题](#常见问题)
 
 ## 工程介绍
 
@@ -21,7 +24,7 @@ demo 例子
 
 
 
-### 下载链接
+### <a id="downloadUrl">下载链接</a>
 
 [wcs-ios-sdk下载链接](https://wcsd.chinanetcenter.com/sdk/cnc-ios-sdk-wcs.zip)
 
