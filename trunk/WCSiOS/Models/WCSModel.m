@@ -24,7 +24,7 @@ NSString * const WCSFormMimeType = @"mimeType";
 NSString * const WCSPathForPut = @"/file/upload";
 NSString * const WCSPathForMultipartUpload = @"/multifile/upload";
 
-NSString * const WCSGetURLString = @"http://w.wcsapi.biz.matocloud.com";
+NSString * const WCSGetURLString = @"your download domain";
 NSString * const WCSBaseUploadString = @"your upload domain";
 NSString * const WCSManagerURLString = @"your mgr domain";
 
