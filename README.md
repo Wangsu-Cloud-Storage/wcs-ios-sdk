@@ -65,6 +65,8 @@ self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://y
   };
   // 建议复用WCSClient
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
+  
+  // 注：如使用callback回调上传，需要使用uploadRequestRaw方法，避免多一次不必要的base64解析导致异常
   [[client uploadRequest:request] continueWithBlock:^id _Nullable(WCSTask<WCSUploadObjectResult *> * _Nonnull task) {
     if (task.error) {
       NSLog(@"The request failed. error: [%@]", task.error);
@@ -131,6 +133,8 @@ return nil;
   };
   // 建议复用WCSClient
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
+  
+  // 注：如使用callback回调上传，需要使用uploadRequestRaw方法，避免多一次不必要的base64解析导致异常
   [[client uploadRequest:request] continueWithBlock:^id _Nullable(WCSTask<WCSUploadObjectResult *> * _Nonnull task) {
     if (task.error) {
       NSLog(@"The request failed. error: [%@]", task.error);
@@ -163,6 +167,8 @@ return nil;
   }];
   // 建议复用WCSClient
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
+  
+  // 注：如使用callback回调上传，需要使用blockUploadRequestRaw方法，避免多一次不必要的base64解析导致异常
   [[client blockUploadRequest:blockRequest] continueWithBlock:^id _Nullable(WCSTask<WCSBlockUploadResult *> * _Nonnull task) {
     if (task.error) {
       NSLog(@"error %@", task.error.localizedDescription);
