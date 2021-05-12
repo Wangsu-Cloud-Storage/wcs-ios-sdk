@@ -12,7 +12,7 @@
 * 系统要求：iOS7及以上
 
 ## 工程介绍
-1. [wcs-ios-sdk下载链接](https://wcsd.chinanetcenter.com/sdk/cnc-ios-sdk-wcs.zip)
+1. [wcs-ios-sdk下载链接](http://wcsd.chinanetcenter.com/sdk/wcs-ios-sdk-2.2.5.zip)
 2. [工程源码](https://github.com/Wangsu-Cloud-Storage/wcs-ios-sdk/tree/master/trunk)
 3. [demo&例子](https://github.com/Wangsu-Cloud-Storage/wcs-ios-sdk/tree/master/tools/TestWCSiOS)
 
