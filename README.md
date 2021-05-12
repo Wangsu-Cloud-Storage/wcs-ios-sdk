@@ -60,6 +60,7 @@ self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://y
   request.fileName = @"上传的文件名";
   request.key = @"上传到云端的文件名，不填云端则以fileName命名";
   request.fileData = fileData; // 要上传的文件
+  request.mimeType = @"文件contentType"; // 无特殊需求可不配置，由系统匹配content-type
   request.uploadProgress = ^(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend) {
     NSLog(@"%lld bytes sent, %lld total bytes sent, %lld total byte exptected", bytesSent, totalBytesSent, totalBytesExpectedToSend);
   };
