@@ -117,8 +117,18 @@ static NSString * WCSContentTypeForPathExtension(NSString *extension) {
   // Post Files
   i=0;
   for (NSDictionary *val in self.fileDataArray) {
+    
+    //mimeType跟filename不是兄弟关系 是叔侄关系 所以要单列一段
+    NSString *mimeType = [val objectForKey:@"contentType"];
+    if (mimeType != nil) {
+      [data appendData:[[NSString stringWithString:@"Content-Disposition: form-data; name=\"mimeType\"\r\n\r\n"] dataUsingEncoding:NSUTF8StringEncoding]];
+      [data appendData:[mimeType dataUsingEncoding:NSUTF8StringEncoding]];
+      [data appendData:endItemBoundary];
+    }
+    
     NSString *disposition = [NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n", WCSFormUploadFile, [val objectForKey:@"fileName"]];
-    NSString *contentType = [NSString stringWithFormat:@"Content-Type: %@\r\n\r\n", [val objectForKey:@"contentType"]];
+//    NSString *contentType = [NSString stringWithFormat:@"Content-Type: %@\r\n\r\n", [val objectForKey:@"contentType"]];
+    NSString *contentType = [NSString stringWithFormat:@"Content-Type: application/octet-stream\r\n\r\n"];
     
     [data appendData:[disposition dataUsingEncoding:NSUTF8StringEncoding]];
     [data appendData:[contentType dataUsingEncoding:NSUTF8StringEncoding]];
