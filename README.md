@@ -161,6 +161,7 @@ return nil;
   blockRequest.fileKey = @"上传到云端的文件名，不填则以原文件名命名";
   blockRequest.fileURL = fileURL; // 文件的URL
   blockRequest.token = @"上传的token，由服务端提供";
+  blockRequest.mimeType = @"文件contentType"; // 无特殊需求可不配置，由系统匹配content-type
   blockRequest.chunkSize = 256 * 1024; // 注意：片的大小必须是64K的倍数，最大不能超过块的大小。
   blockRequest.blockSize = 4 * 1024 * 1024; // 注意：块的大小必须是4M的倍数，最大不能超过100M
   [blockRequest setUploadProgress:^(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend) {
