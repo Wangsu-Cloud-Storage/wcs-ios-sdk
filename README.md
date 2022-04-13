@@ -92,7 +92,7 @@ self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://y
   request.fileData = fileData; // 要上传的文件
   request.uploadProgress = ^(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend) {
     NSLog(@"%lld bytes sent, %lld total bytes sent, %lld total byte exptected", bytesSent, totalBytesSent, totalBytesExpectedToSend);
-  };
+  }; // 上传进度回调
   // 建议复用WCSClient
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
   [[client uploadRequest:request] continueWithBlock:^id _Nullable(WCSTask<WCSUploadObjectResult *> * _Nonnull task) {
@@ -131,7 +131,7 @@ return nil;
   request.fileData = fileData; // 要上传的文件
   request.uploadProgress = ^(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend) {
     NSLog(@"%lld bytes sent, %lld total bytes sent, %lld total byte exptected", bytesSent, totalBytesSent, totalBytesExpectedToSend);
-  };
+  }; // 上传进度回调
   // 建议复用WCSClient
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
   
@@ -166,7 +166,7 @@ return nil;
   blockRequest.blockSize = 4 * 1024 * 1024; // 注意：块的大小必须是4M的倍数，最大不能超过100M
   [blockRequest setUploadProgress:^(int64_t bytesSent, int64_t totalBytesSent, int64_t totalBytesExpectedToSend) {
     NSLog(@"%@ %@", @(totalBytesSent), @(totalBytesExpectedToSend));
-  }];
+  }]; // 上传进度回调
   // 建议复用WCSClient
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
   
