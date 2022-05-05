@@ -194,20 +194,26 @@ return nil;
 ```
 
 ### 常见问题
-1）方法无法被识别，如：-[__NSCFDictionary safeStringForKey:]: unrecognized selector sent to instance 0x7f8c51d3c260。
-请确认已在Other Linker Flags添加-ObjC
+1、方法无法被识别，如：-[__NSCFDictionary safeStringForKey:]: unrecognized selector sent to instance 0x7f8c51d3c260。
 
-2）链接_crc32异常
-请添加libz.tbd到工程中
+_请确认已在Other Linker Flags添加-ObjC_
 
-3）链接_UTTypeCopyPreferredTagWithClass异常
-请添加MobileCoreServices.framework到工程中
+2、链接_crc32异常
 
-4）nslog信息本地保存
-请参照demo的 AppDelegate.m 里面 [self redirectNSLogToDocumentFolder];
+_请添加libz.tbd到工程中_
 
-5）使用分片上传提示：Illegal block size
-使用分片上传，块大小最小为4M，最大为100M，且必须是4M的倍数，否则会提示块大小无效
+3、链接_UTTypeCopyPreferredTagWithClass异常
 
-6）使用分片上传提示：Illegal chunk size
-使用分片上传，片大小不能大于块大小，否则提示片大小无效
+_请添加MobileCoreServices.framework到工程中_
+
+4、nslog信息本地保存
+
+_请参照demo的 AppDelegate.m 里面 [self redirectNSLogToDocumentFolder];_
+
+5、使用分片上传提示：Illegal block size
+
+_使用分片上传，块大小最小为4M，最大为100M，且必须是4M的倍数，否则会提示块大小无效_
+
+6、使用分片上传提示：Illegal chunk size
+
+_使用分片上传，片大小不能大于块大小，否则提示片大小无效_
