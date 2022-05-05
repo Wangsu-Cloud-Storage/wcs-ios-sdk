@@ -205,3 +205,9 @@ return nil;
 
 4）nslog信息本地保存
 请参照demo的 AppDelegate.m 里面 [self redirectNSLogToDocumentFolder];
+
+5）使用分片上传提示：Illegal block size
+使用分片上传，块大小最小为4M，最大为100M，且必须是4M的倍数，否则会提示块大小无效
+
+6）使用分片上传提示：Illegal chunk size
+使用分片上传，片大小不能大于块大小，否则提示片大小无效
