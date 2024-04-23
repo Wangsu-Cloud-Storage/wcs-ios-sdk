@@ -68,15 +68,15 @@ self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://y
   WCSClient *client = [[WCSClient alloc] initWithBaseURL:nil andTimeout:30];
   
   // 注：如使用callback回调上传，需要使用uploadRequestRaw方法，避免多一次不必要的base64解析导致异常
-  // [[self.client uploadRequestRaw:uploadRequest] continueWithBlock:^id _Nullable(WCSTask<WCSUploadObjectStringResult *> * _Nonnull task) {
-  //    NSLog(@"%@", task.error.localizedDescription);
-  //    if (task.error) {
-  //        NSLog(@"%@", task.error);
-  //    } else {
-  //        NSLog(@"%@", task.result.resultString);
-  //    }
-  //    return nil;
-  // }];
+  [[self.client uploadRequestRaw:uploadRequest] continueWithBlock:^id _Nullable(WCSTask<WCSUploadObjectStringResult *> * _Nonnull task) {
+    NSLog(@"%@", task.error.localizedDescription);
+    if (task.error) {
+        NSLog(@"%@", task.error);
+    } else {
+        NSLog(@"%@", task.result.resultString);
+    }
+    return nil;
+  }];
   
   // 未使用callback回调上传时使用uploadRequest，会自动将结果做base64解析
   [[client uploadRequest:request] continueWithBlock:^id _Nullable(WCSTask<WCSUploadObjectResult *> * _Nonnull task) {
