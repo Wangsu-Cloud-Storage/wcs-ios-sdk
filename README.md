@@ -12,7 +12,7 @@
 * 系统要求：iOS7及以上
 
 ## 工程介绍
-1. [frameworks](https://github.com/Wangsu-Cloud-Storage/wcs-ios-sdk/frameworks)
+1. [frameworks](https://github.com/Wangsu-Cloud-Storage/wcs-ios-sdk/tree/master/frameworks)
 2. [工程源码](https://github.com/Wangsu-Cloud-Storage/wcs-ios-sdk/tree/master/trunk)
 3. [demo&例子](https://github.com/Wangsu-Cloud-Storage/wcs-ios-sdk/tree/master/tools/TestWCSiOS)
 
