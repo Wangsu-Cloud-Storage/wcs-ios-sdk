@@ -1,4 +1,4 @@
-## 语言切换：[中文](README.md) | English（current）
+## 语言切换：[中文](README.md)
 
 ## Prerequisites
 - Object Storage is activated.
