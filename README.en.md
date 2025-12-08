@@ -1,4 +1,8 @@
-## 语言切换：[中文](README.md)
+# Cloud Storage iOS SDK
+
+## 语言 / Language
+- [简体中文](README.md)
+- [English](README.en.md)
 
 ## Prerequisites
 - Object Storage is activated.

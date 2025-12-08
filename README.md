@@ -1,4 +1,8 @@
-## Language switch：[English](README.en.md)
+# 云存储 iOS SDK
+
+## 语言 / Language
+- [简体中文](README.md)
+- [English](README.en.md)
 
 ## 开发准备
 * 账号要求：已开通网宿云存储，并获取上传密钥，上传域名等
