@@ -1,4 +1,4 @@
-## Language switch：[English](README.en.md) | 中文（当前）
+## Language switch：[English](README.en.md)
 
 ## 开发准备
 * 账号要求：已开通网宿云存储，并获取上传密钥，上传域名等
