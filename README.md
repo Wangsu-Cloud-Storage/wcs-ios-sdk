@@ -5,7 +5,7 @@
 - [English](README.en.md)
 
 ## 开发准备
-* 账号要求：已开通网宿云存储，并获取上传密钥，上传域名等
+* 账号要求：已开通wcs云存储，并获取上传密钥，上传域名等
 * 系统要求：iOS7及以上
 
 ## 工程介绍
@@ -34,7 +34,7 @@ SDK的framework包含Category，所以需要添加-ObjC选项，否则在使用�
 
 
 ## 初始化说明
-* 用户接入网宿云存储时，需要使用一对有效的AK和SK进行签名认证。为保证ak，sk的安全性，推荐客户通过自己的服务端下发鉴权凭证。
+* 用户接入wcs云存储时，需要使用一对有效的AK和SK进行签名认证。为保证ak，sk的安全性，推荐客户通过自己的服务端下发鉴权凭证。
 * 配置上传域名&超时时间
 ```
 self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://yourUploadDomain.com"] andTimeout:30];
@@ -45,7 +45,7 @@ self.client = [[WCSClient alloc] initWithBaseURL:[NSURL URLWithString:@"http://y
 ### 普通上传
 * 表单上传时可开启returnurl进行页面跳转，其他情况下建议不设置returnurl。
 * 若文件大小超过20M，建议使用分片上传
-* 云存储提供的上传域名为普通域名，若对上传速度较为敏感，有要求的客户建议采用网宿上传加速服务。
+* 云存储提供的上传域名为普通域名，若对上传速度较为敏感，有要求的客户建议采用上传加速服务。
 
 1. 普通上传
 **范例：**
