@@ -28,7 +28,7 @@ libz.dylib(libz.tbd for Xcode7+)
 4. The *framework* in SDK includes *Category*, so it need to add *-ObjC*, or there may comes abnormity that selector can't be recognized during the using.
 e.g.
 -[__NSCFDictionary safeStringForKey:]: unrecognized selector sent to instance 0x7f8c51d3c260 
-![image.png](https://www.wangsu.com/wos/draft/help_doc/en_us/2514/3476/1601197052625_image.png)
+![image.png](https://wcsd.chinanetcenter.com/sdk/wcs-ios-sdk2.png)
 
 ### Development environment preparation in server end
 For server end development environment please refer to [wcs-Java-SDK](https://github.com/CDNetworks-Object-Storage/wcs-java-sdk)

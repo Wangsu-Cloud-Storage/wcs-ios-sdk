@@ -27,7 +27,7 @@ libz.dylib(libz.tbd for Xcode7+)
 4)工程编译环境
 SDK的framework包含Category，所以需要添加-ObjC选项，否则在使用过程中会出现selector无法识别的异常，如：
 -[__NSCFDictionary safeStringForKey:]: unrecognized selector sent to instance 0x7f8c51d3c260
-![添加-objc](https://wcs.chinanetcenter.com/indexNew/image/wcs/wcs-ios-sdk2.png)
+![添加-objc](https://wcsd.chinanetcenter.com/sdk/wcs-ios-sdk2.png)
 
 二、服务端开发环境准备
 服务端开发环境请参考wcs-Java-SDK: https://github.com/Wangsu-Cloud-Storage/wcs-java-sdk
